@@ -1,0 +1,6 @@
+# view res/layout/main.xml #generated:1
+-keep class .DiUniTo { <init>(...); }
+
+# view AndroidManifest.xml #generated:5
+-keep class processing.test.diunito.MainActivity { <init>(...); }
+

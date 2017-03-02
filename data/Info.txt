@@ -1,0 +1,4 @@
+I nomi delle tabbel sono nel formato:
+CorsoAnno_Semestre_Settimana_TurnoLaboratorio.csv
+
+Dopo il nome del corso segue subito il carattere ":" in modo da far capire al programma quando termina il nome del corso, per poter così dare informazioni all'utente quando ci clicca sopra.

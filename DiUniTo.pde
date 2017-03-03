@@ -6,22 +6,21 @@ char corso=' ';
 String scene="Orario";
 int turno, imgIndex=0;
 float x, y;
-Table aule, materie, pranzo;
-TableRow aula, materia;
+Table materie, pranzo;
+TableRow materia;
 PImage[] imgInfo = new PImage[4];
 final String[] settimana = {"Lun", "Mar", "Mer", "Gio", "Ven"}, 
   MATERIA={"Nome corso:", "Crediti:", "Modalità d'esame:", "Docente:", "Docente:", "Docente:"};
 Calendar cal;
 public void settings() {
-  //fullScreen();
-  size(360, 640);
+  fullScreen();
+  //size(360, 640);
 }
 Settimana a;
 public void setup() {
   cal = Calendar.getInstance();
   day = (cal.get(Calendar.DAY_OF_WEEK)+5)%7;
   week = (cal.get(Calendar.WEEK_OF_YEAR)+1)%2;
-  aule = loadTable("Aule.csv", "header");
   textAlign(CENTER, CENTER);
   if (month() >= 1 && month() < 8) {
     sem = 2;
@@ -72,30 +71,30 @@ public void draw() {
     textAlign(CENTER, CENTER);
     text("Indietro", 0, 600, 360, 40);
   } else if (scene.equals("Corso")) {
-    background(0);
-    stroke(0, 255, 255);
-    fill((x >= 20 && x <= 340 && y >= 10 && y <= 310 && mousePressed) ? 130 : 0);
+    background(255);
+    stroke(0);
+    fill((x >= 20 && x <= 340 && y >= 10 && y <= 310 && mousePressed) ? color(0,100,0):color(0,200,0));
     rect(20, 10, 320, 300);
-    fill((x >= 20 && x <= 340 && y >= 330 && y <= 630 && mousePressed) ? 130 : 0);
+    fill((x >= 20 && x <= 340 && y >= 330 && y <= 630 && mousePressed) ? color(100,0,0): color(200,0,0));
     rect(20, 330, 320, 300);
     textSize(40);
-    fill(0, 255, 255);
+    fill(0);
     text("Corso A", 20, 10, 320, 300);
     text("Corso B", 20, 330, 320, 300);
   } else if (scene.equals("Anno")) {
-    background(0);
-    fill((x >= 10 && x <= 170 && y >= 20 && y <= 320 && mousePressed) ? 130 : 0); //Anno 1
+    background(255);
+    fill((x >= 10 && x <= 170 && y >= 20 && y <= 320 && mousePressed) ?color(200,200,0): color(255,255,0)); //Anno 1
     rect(10, 20, 160, 300);
-    fill((x >= 190 && x <= 350 && y >= 20 && y <= 320 && mousePressed) ? 130 : 0); //Anno 2
+    fill((x >= 190 && x <= 350 && y >= 20 && y <= 320 && mousePressed) ? color(200,200,0) : color(255,255,0) ); //Anno 2
     rect(190, 20, 160, 300);
-    fill((x >= 10 && x <= 350 && y >= 340 && y <= 430 && mousePressed) ? 130 : 0); //Sistemi e Reti
+    fill((x >= 10 && x <= 350 && y >= 340 && y <= 430 && mousePressed) ?  color(150,150,0) : color(200,200,0)); //Sistemi e Reti
     rect(10, 340, 340, 90); 
-    fill((x >= 10 && x <= 350 && y >= 440 && y <= 530 && mousePressed) ? 130 : 0); //Linguaggi e Sistemi
+    fill((x >= 10 && x <= 350 && y >= 440 && y <= 530 && mousePressed) ?  color(200,100,0) : color(250,160,0)); //Linguaggi e Sistemi
     rect(10, 440, 340, 90); 
-    fill((x >= 10 && x <= 350 && y >= 540 && y <= 630 && mousePressed) ? 130 : 0); //Informazione e Conoscenza
+    fill((x >= 10 && x <= 350 && y >= 540 && y <= 630 && mousePressed) ?  color(150,0,0) : color(200,0,0)); //Informazione e Conoscenza
     rect(10, 540, 340, 90);
 
-    fill(255);
+    fill(0);
     textSize(35);
     text("Anno 1", 10, 20, 160, 300);
     text("Anno 2", 190, 20, 160, 300);
@@ -104,13 +103,13 @@ public void draw() {
     text("Linguaggi e Sistemi", 10, 440, 340, 90);
     text("Informazione e Conoscenza", 10, 540, 340, 90);
   } else if (scene.equals("Matricola")) {
-    background(0);
-    fill((x >= 20 && x <= 340 && y >= 10 && y <= 310 && mousePressed) ? 130 : 0);
+    background(255);
+    fill((x >= 20 && x <= 340 && y >= 10 && y <= 310 && mousePressed) ?color(0,100,0):color(0,200,0));
     rect(20, 10, 320, 300);
-    fill((x >= 20 && x <= 340 && y >= 330 && y <= 630 && mousePressed) ? 130 : 0);
+    fill((x >= 20 && x <= 340 && y >= 330 && y <= 630 && mousePressed) ?color(100,0,0):color(200,0,0));
     rect(20, 330, 320, 300);
     textSize(40);
-    fill(0, 255, 255);
+    fill(0);
     text("Matricola Pari", 20, 10, 320, 300);
     text("Matricola Dispari", 20, 330, 320, 300);
   }
@@ -135,7 +134,6 @@ public void mouseReleased() {
     if (y >= 600 && y <= 640) {
       scene = "Orario";
       materia = null;
-      aula = null;
       textAlign(CENTER, CENTER);
     }
     if ((x >= 10 && y >= 10 && x <= 350 && y <= 210)) {

@@ -1,5 +1,5 @@
-/tmp/android6782491302687230363sketch/bin/DiUniTo-release-unsigned.apk : \
-/tmp/android6782491302687230363sketch/bin/DiUniTo.ap_ \
-/tmp/android6782491302687230363sketch/bin/classes.dex \
-/tmp/android6782491302687230363sketch/libs/android-support-v4.jar \
-/tmp/android6782491302687230363sketch/libs/processing-core.jar \
+/tmp/android8264386539303019729sketch/bin/DiUniTo-release-unsigned.apk : \
+/tmp/android8264386539303019729sketch/bin/DiUniTo.ap_ \
+/tmp/android8264386539303019729sketch/bin/classes.dex \
+/tmp/android8264386539303019729sketch/libs/android-support-v4.jar \
+/tmp/android8264386539303019729sketch/libs/processing-core.jar \

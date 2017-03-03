@@ -17,7 +17,6 @@ void setInfo(String lezione) {
   }
   String tmp[] = split(lezione,":");
   tmp[1]=trim(tmp[1]);
-  aula = aule.findRow(tmp[1],"Nome");
   materia = materie.findRow(tmp[0],"Nome");
   scene = "info";
   imgInfo = getImgInfo(tmp[1]);

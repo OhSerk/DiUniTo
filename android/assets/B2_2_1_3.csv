@@ -1,0 +1,10 @@
+Lun,Mar,Mer,Gio,Ven
+Algoritmi: D,Fisica: D,Fisica: D,Algoritmi: Dijkstra,_
+Algoritmi: D,Fisica: D,Fisica: D,Algoritmi: Dijkstra,_
+Database: D,Database: D,Algoritmi: D,Algoritmi: Dijkstra,Algoritmi: D
+Database: D,Database: D,Algoritmi: D,Pranzo,Algoritmi: D
+Pranzo,Pranzo,Pranzo,Database: Dijkstra,Pranzo
+Economia: A,Economia: B,Diritto: A,Database: Dijkstra,Database: D
+Economia: A,Economia: B,Diritto: A,Database: Dijkstra,Database: D
+Economia: A,Fisica: B,Diritto: A,_,_
+_,Fisica: B,_,_,_

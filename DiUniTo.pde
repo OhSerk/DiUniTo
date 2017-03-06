@@ -1,5 +1,4 @@
 import java.util.Calendar;
-
 boolean rel=false;
 int week, day;
 int sem, anno, percorso, MATRICOLA;

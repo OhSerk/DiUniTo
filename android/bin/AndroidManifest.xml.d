@@ -1,2 +1,2 @@
-/tmp/android140916136248113089sketch/bin/AndroidManifest.xml : \
-/tmp/android140916136248113089sketch/AndroidManifest.xml \
+/tmp/android8206695719984302666sketch/bin/AndroidManifest.xml : \
+/tmp/android8206695719984302666sketch/AndroidManifest.xml \

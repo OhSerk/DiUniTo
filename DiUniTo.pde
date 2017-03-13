@@ -13,8 +13,8 @@ final String[] settimana = {"Lun", "Mar", "Mer", "Gio", "Ven"},
   MATERIA={"Nome corso:", "Crediti:", "Modalità d'esame:", "Docente:", "Docente:", "Docente:"};
 Calendar cal;
 public void settings() {
-  //fullScreen(); //Android
-  size(360, 640); //Windows
+  fullScreen(); //Android
+  //size(360, 640); //Windows
 }
 Settimana a;
 public void setup() {
@@ -131,16 +131,16 @@ void annoMR() {
     percorso=0;
   } 
   if ((x >= 10 && x <= 350 && y >= 340 && y <= 430)) {//Sistemi e Reti
-    anno=3;
-    percorso=1;
+    //anno=3;
+    //percorso=1;
   } 
   if ((x >= 10 && x <= 350 && y >= 440 && y <= 530)) {//Linguaggi e Sistemi
-    anno=3;
-    percorso=2;
+    //anno=3;
+    //percorso=2;
   } 
   if ((x >= 10 && x <= 320 && y >= 540 && y <= 630)) {//Informazione e Conoscenza
-    anno=3;
-    percorso=3;
+    //anno=3;
+    //percorso=3;
   } 
   if (anno != 0) scene = "Matricola";
 }

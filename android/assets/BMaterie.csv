@@ -1,6 +1,10 @@
 Nome,Crediti,Modalità,Docente1,Docente2,Docente3
-Algoritmi,9CFU,Scritto + Laboratorio,/,/,/
-Fisica,6CFU,Scritto,/,/,/
-Database,9CFU,Scritto+Laboratorio,/,/,anselma@di.unito.it
-Economia,6CFU,Scritto,pironti@di.unito.it,pisano@di.unito.it,/
-Diritto,3CFU,Scritto,/,/,/
+Algoritmi,9,Scritto + Laboratorio,Ugo DE'LIGUORO,Ferruccio DAMIANI(T3),Gian Luca POZZATO(T4)
+Fisica,6,Scritto,Igor PESANDO,/,/
+Database,9,Scritto+Laboratorio,Ruggero Gaetano PENSA,Ruggero  Gaetano PENSA(T3),Sara CAPECCHI(T4)
+Economia,6,Scritto,Marco PIRONTI,Paola Maria PISANO,/
+Diritto,3,Scritto,Fabio MONTALCINI,Camillo SACCHETTO,/
+Analisi,9,Pretest+Scritto+Orale,/,/,/
+Arch.,9,Scritto,/,/,/
+Prog. II,9,Laboratorio+Scritto,/,/,/
+Inglese I,3,Scritto+Scritto,/,/,/

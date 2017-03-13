@@ -33,8 +33,8 @@ final String[] settimana = {"Lun", "Mar", "Mer", "Gio", "Ven"},
   MATERIA={"Nome corso:", "Crediti:", "Modalit\u00e0 d'esame:", "Docente:", "Docente:", "Docente:"};
 Calendar cal;
 public void settings() {
-  //fullScreen(); //Android
-  size(360, 640); //Windows
+  fullScreen(); //Android
+  //size(360, 640); //Windows
 }
 Settimana a;
 public void setup() {
@@ -151,16 +151,16 @@ public void annoMR() {
     percorso=0;
   } 
   if ((x >= 10 && x <= 350 && y >= 340 && y <= 430)) {//Sistemi e Reti
-    anno=3;
-    percorso=1;
+    //anno=3;
+    //percorso=1;
   } 
   if ((x >= 10 && x <= 350 && y >= 440 && y <= 530)) {//Linguaggi e Sistemi
-    anno=3;
-    percorso=2;
+    //anno=3;
+    //percorso=2;
   } 
   if ((x >= 10 && x <= 320 && y >= 540 && y <= 630)) {//Informazione e Conoscenza
-    anno=3;
-    percorso=3;
+    //anno=3;
+    //percorso=3;
   } 
   if (anno != 0) scene = "Matricola";
 }
@@ -303,11 +303,12 @@ public class Settimana {
 
   public void view() {
     int j = 0;
+    int righe = table.getRowCount();
     for (TableRow row : table.rows()) {
       fill(150);
-      rect(6, 10+65*j, 38, 65);
+      rect(6, 10+(585/righe)*j, 38, 585/righe);
       fill(0);
-      text((j+9)+"-"+(j+10), 6, 10+65*j, 38, 65);
+      text((j+9)+"-"+(j+10), 6, 10+585/righe*j, 38, 585/righe);
       for (int i = 0; i < settimana.length; i++) {
         String lezione = row.getString(settimana[i]);
         if (j == hour()-9 && i == day) { 
@@ -315,13 +316,14 @@ public class Settimana {
         } else {
           fill(255);
         }
-        if (rel && x >= 44+62*i && x <= 106+62*i && y >= 10+65*j && y <= 75+70*j) {
+        if (rel && x >= 44+62*i && x < 106+62*i && y > 10+(585/righe)*j && y <= 10+(585/righe)+(585/righe)*j) {
           imgIndex=0;
           setInfo(lezione);
+          //fill(255,0,0);
         }
-        rect(44+62*i, 10+65*j, 62, 65);
+        rect(44+62*i, 10+585/righe*j, 62, 585/righe);
         fill(0);
-        text(lezione, 44+62*i, 10+65*j, 62, 65);
+        text(lezione, 44+62*i, 10+585/righe*j, 62, 585/righe);
       }
       j++;
     }

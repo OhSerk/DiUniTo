@@ -12,11 +12,12 @@ public class Settimana {
 
   void view() {
     int j = 0;
+    int righe = table.getRowCount();
     for (TableRow row : table.rows()) {
       fill(150);
-      rect(6, 10+65*j, 38, 65);
+      rect(6, 10+(585/righe)*j, 38, 585/righe);
       fill(0);
-      text((j+9)+"-"+(j+10), 6, 10+65*j, 38, 65);
+      text((j+9)+"-"+(j+10), 6, 10+585/righe*j, 38, 585/righe);
       for (int i = 0; i < settimana.length; i++) {
         String lezione = row.getString(settimana[i]);
         if (j == hour()-9 && i == day) { 
@@ -24,13 +25,14 @@ public class Settimana {
         } else {
           fill(255);
         }
-        if (rel && x >= 44+62*i && x <= 106+62*i && y >= 10+65*j && y <= 75+70*j) {
+        if (rel && x >= 44+62*i && x < 106+62*i && y > 10+(585/righe)*j && y <= 10+(585/righe)+(585/righe)*j) {
           imgIndex=0;
           setInfo(lezione);
+          //fill(255,0,0);
         }
-        rect(44+62*i, 10+65*j, 62, 65);
+        rect(44+62*i, 10+585/righe*j, 62, 585/righe);
         fill(0);
-        text(lezione, 44+62*i, 10+65*j, 62, 65);
+        text(lezione, 44+62*i, 10+585/righe*j, 62, 585/righe);
       }
       j++;
     }

@@ -1,7 +1,0 @@
-I nomi delle tabelle sono nel formato:
-CorsoAnno_Semestre_Settimana_TurnoLaboratorio.csv
-
-Dopo il nome del corso segue subito il carattere ":" in modo da far capire al programma quando termina il nome del corso, per poter così dare informazioni all'utente quando ci clicca sopra.
-Per ogni Aula/Laboratorio ci sono 4 foto, salvate nel formato "NomeAula"+i+".png", dove i = 0 è il cartello dell'aula, dove appunto indica il nome e i posti a sedere, mentre le altre 3 foto sono abbastanza generali.
-
-Ci sono due file per le materie, una per corso, poichè gli esami sono gli stessi, cambiano i docenti e di conseguenza i loro contatti.

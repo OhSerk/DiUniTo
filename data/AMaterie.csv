@@ -1,10 +1,10 @@
 Nome,Crediti,Modalità,Docente1,Docente2,Docente3
-Algoritmi,9,Scritto + Laboratorio,Andras HORVATH,Diego MAGRO(T1),Roberto ESPOSITO(T2)
-Fisica,6,Scritto,Martino GAGLIARDI,Ernesto MIGLIORE,/
-Database,9,Scritto+Laboratorio,Giuseppina Barbara DEMO,Luca ANSELMA(T1),Giuseppina Barbara DEMO(T2)
-Economia,6,Scritto,Marco PIRONTI,Paola Maria PISANO,/
-Diritto,3,Scritto,Fabio MONTALCINI,Camillo SACCHETTO,/
-Analisi,9,Pretest+Scritto+Orale,/,/,/
-Arch.,9,Scritto,/,/,/
-Prog. II,9,Laboratorio+Scritto,/,/,/
-Inglese I,3,Scritto+Scritto,/,/,/
+Algoritmi,9,Scritto + Laboratorio,Andras HORVATH - horvath@di.unito.it ,Diego MAGRO(T1) -  magro@di.unito.it ,Roberto ESPOSITO(T2) - esposito@di.unito.it
+Fisica,6,Scritto,Martino GAGLIARDI - martino.gagliardi@unito.it ,Ernesto MIGLIORE - migliore@to.infn.it ,/
+Database,9,Scritto+Laboratorio,Giuseppina Barbara DEMO - demo@di.unito.it ,Luca ANSELMA(T1) - anselma@di.unito.it ,Giuseppina Barbara DEMO(T2) - demo@di.unito.it 
+Economia,6,Scritto,Marco PIRONTI - pironti@di.unito.it ,Paola Maria PISANO - paola.pisano@di.unito.it ,/
+Diritto,3,Scritto,Fabio MONTALCINI - muntal@libero.it ,Camillo SACCHETTO - sacchetto.cam@gmail.com ,/
+Analisi,9,Pretest+Scritto+Orale,Vivina Laura BARUTELLO - vivina.barutello@unito.it ,Alberto BOSCAGGIN - alberto.boscaggin@unito.it ,Camillo COSTANTINI -  camillo.costantini@unito.it 
+Arch.,9,Scritto,Rossano GAETA - rossano@di.unito.it,Matteo BALDONI(T1) - baldoni@di.unito.it ,Matteo BALDONI(T2) - baldoni@di.unito.it
+Prog. II,9,Laboratorio+Scritto,Luca PADOVANI - padovani@di.unito.it ,Luca PADOVANI(T1) - padovani@di.unito.it ,Luca PADOVANI(T2) - padovani@di.unito.it 
+Inglese I,3,Scritto+Scritto,Francesca CORDERO - fcordero@di.unito.it ,Jeanne Marie GRIFFIN - griffin@di.unito.it , Maddalena ZACCHI - zacchi@di.unito.it 

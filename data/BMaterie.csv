@@ -1,10 +1,10 @@
 Nome,Crediti,Modalità,Docente1,Docente2,Docente3
-Algoritmi,9,Scritto + Laboratorio,Ugo DE'LIGUORO,Ferruccio DAMIANI(T3),Gian Luca POZZATO(T4)
-Fisica,6,Scritto,Igor PESANDO,/,/
-Database,9,Scritto+Laboratorio,Ruggero Gaetano PENSA,Ruggero  Gaetano PENSA(T3),Sara CAPECCHI(T4)
-Economia,6,Scritto,Marco PIRONTI,Paola Maria PISANO,/
-Diritto,3,Scritto,Fabio MONTALCINI,Camillo SACCHETTO,/
-Analisi,9,Pretest+Scritto+Orale,/,/,/
-Arch.,9,Scritto,/,/,/
-Prog. II,9,Laboratorio+Scritto,/,/,/
-Inglese I,3,Scritto+Scritto,/,/,/
+Algoritmi,9,Scritto + Laboratorio,Ugo DE'LIGUORO - deligu@di.unito.it ,Ferruccio DAMIANI(T3) - damiani@di.unito.it ,Gian Luca POZZATO(T4) pozzato@di.unito.it 
+Fisica,6,Scritto,Igor PESANDO -ipesando@to.infn.it ,/,/
+Database,9,Scritto+Laboratorio,Ruggero Gaetano PENSA - pensa@di.unito.it ,Ruggero  Gaetano PENSA(T3) - pensa@di.unito.it ,Sara CAPECCHI(T4) - capecchi@di.unito.it 
+Economia,6,Scritto,Marco PIRONTI - pironti@di.unito.it ,Paola Maria PISANO - paola.pisano@di.unito.it ,/
+Diritto,3,Scritto,Fabio MONTALCINI - muntal@libero.it ,Camillo SACCHETTO - sacchetto.cam@gmail.com ,/
+Analisi,9,Pretest+Scritto+Orale,Walter DAMBROSIO -  walter.dambrosio@unito.it  ,Alberto BOSCAGGIN - alberto.boscaggin@unito.it ,Camillo COSTANTINI -  camillo.costantini@unito.it 
+Arch.,9,Scritto,Marco ALDINUCCI - aldinuc@di.unito.it ,Maurizio LUCENTEFORTE (T1) -  lucente@di.unito.it ,Susanna DONATELLI(T2) - susi@di.unito.it 
+Prog. II,9,Laboratorio+Scritto,Viviana BONO - bono@di.unito.it ,Viviana BONO(T1) - bono@di.unito.it ,Viviana BONO(T2) - bono@di.unito.it 
+Inglese I,3,Scritto+Scritto,Francesca CORDERO - fcordero@di.unito.it ,Jeanne Marie GRIFFIN - griffin@di.unito.it , Maddalena ZACCHI - zacchi@di.unito.it 

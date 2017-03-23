@@ -55,7 +55,8 @@ public void draw() {
   scale(width/360, height/640); //Scalo tutto in 16:9
   if (scene.equals("Orario")) {
     a.view(); //STampo l'orario settimanale
-    text("Cambia Orario", 0, 600, 360, 40);
+    text("Cambia Orario", 0, 600, 180, 40);
+    text("Settimana prossima", 180, 600, 180, 40);
   } else if (scene.equals("info")) {
     printInfo();
   } else if (scene.equals("Pranzo")) {
@@ -82,7 +83,7 @@ public void mouseReleased() {
     orarioMR();
   } else if (scene.equals("info")) {
     infoMR();
-  } else if(scene.equals("Pranzo")){
+  } else if (scene.equals("Pranzo")) {
     pranzoMR();
   } else if (scene.equals("Corso")) {
     corsoMR();
@@ -95,9 +96,14 @@ public void mouseReleased() {
 
 void orarioMR() {
   if (y >= 600 && y <= 640) {
-    File x = new File(dataPath("Config.txt"));
-    if (x.delete())
-      setup();
+    if ( x < 180) {
+      File x = new File(dataPath("Config.txt"));
+      if (x.delete())
+        setup();
+    } else {
+      week = (week+1)%2;
+      a = new Settimana(corso, anno, percorso, sem, turno);
+    }
   }
 }
 
